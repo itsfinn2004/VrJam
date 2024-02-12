@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -9,9 +10,9 @@ public class Deur : MonoBehaviour
     [SerializeField] private GameObject sleutelGat;
     private bool locked = true;
 
-    public float rotationSpeed = 45f; 
-
-    private Quaternion targetRotation;
+    public float rotationSpeed = 90f;
+    public Quaternion beginRotation;
+    public Quaternion targetRotation;
     private float elapsedTime = 0f;
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +24,7 @@ public class Deur : MonoBehaviour
             key = other.gameObject;
             other.GetComponent<XRGrabInteractable>().enabled = false;
             key.transform.position = sleutelGat.transform.position;
+            key.transform.rotation = beginRotation;
             locked = false;
         }
     }
@@ -30,8 +32,7 @@ public class Deur : MonoBehaviour
     private void FixedUpdate()
     {
         if (!locked)
-        {
-            
+        { 
             elapsedTime += Time.deltaTime;
 
             Quaternion newRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
