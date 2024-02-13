@@ -1,27 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TimeSwitch : MonoBehaviour
 {
     public bool Future;
-    public GameObject futureObjects;
-    public GameObject pastObjects;
+    public GameObject player;
+    public GameObject past;
+    public GameObject future;
+    [SerializeField] InputActionReference TimeButton;
 
-  
+
+   private bool time
+    {
+        get => TimeButton;
+        set
+        {
+            ChangeTime();
+        }
+    }
+
     public void ChangeTime()
     {
         if (Future)
         {
-            pastObjects.SetActive(false);
-            futureObjects.SetActive(true);
+            player.transform.position = future.transform.position;
             Future = false;
             Debug.Log("past");
         }
         else
         {
-            futureObjects.SetActive(false);
-            pastObjects.SetActive(true);
+            player.transform .position = past.transform.position;
             Future = true;
             Debug.Log("future");
         }
