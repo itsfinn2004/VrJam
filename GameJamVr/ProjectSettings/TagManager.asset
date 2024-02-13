@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - KeyHole
   - GameMusic
+  - outOfBounds
   layers:
   - Default
   - TransparentFX
