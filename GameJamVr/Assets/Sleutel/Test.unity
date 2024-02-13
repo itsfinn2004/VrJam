@@ -438,8 +438,8 @@ MonoBehaviour:
   key: {fileID: 0}
   sleutelGat: {fileID: 2026510835}
   rotationSpeed: 45
-  beginRotation: {x: 0.70492697, y: -0.05547905, z: 0.05547905, w: 0.70492697}
-  targetRotation: {x: 0.0000001910639, y: -0.70710677, z: -0.70710677, w: -0.0000001910639}
+  beginRotation: {x: 0, y: 0, z: 0, w: 1}
+  targetRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!65 &481145673
 BoxCollider:
   m_ObjectHideFlags: 0

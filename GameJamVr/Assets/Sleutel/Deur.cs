@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class Deur : MonoBehaviour
 {
@@ -10,10 +11,8 @@ public class Deur : MonoBehaviour
     [SerializeField] private GameObject sleutelGat;
     private bool locked = true;
 
-    public float rotationSpeed = 90f;
-    public Quaternion beginRotation;
-    public Quaternion targetRotation;
-    private float elapsedTime = 0f;
+    Quaternion beginRotation = new Quaternion(90,90,90,0);
+    public string nextScene;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,11 +32,7 @@ public class Deur : MonoBehaviour
     {
         if (!locked)
         { 
-            elapsedTime += Time.deltaTime;
-
-            Quaternion newRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-            transform.rotation = newRotation;
+            SceneManager.LoadScene(nextScene);
         }
     }
 }
