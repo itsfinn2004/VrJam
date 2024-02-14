@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class TimeSwitch : MonoBehaviour
 {
-    public bool Future;
+    public bool future;
     public GameObject player;
     private Renderer oldColor;
-    public GameObject pastMachine;
-    public GameObject futureMachine;
+    public GameObject other;
+    //public GameObject futureMachine;
     private bool fading = true;
-    
+    public AudioSource tpsSund;
     
    
     private void OnTriggerEnter(Collider other)
     {
+        tpsSund.Play(0);
         Debug.Log("enter");
         player = other.gameObject;
         oldColor = other.gameObject.GetComponent<MeshRenderer>();
@@ -23,25 +24,25 @@ public class TimeSwitch : MonoBehaviour
     }
     public void tpp()
     {
-        Debug.Log("tp");
-        if (Future)
-        {
-
-
-            fading = true;
-            player.transform.position = pastMachine.transform.position;
-            Debug.Log("past");
-            Future = !Future;
+        //Debug.Log("tp");
+        //if (future)
+        //{
+        
+        player.transform.position = other.transform.position;
+        //    fading = true;
+        //    player.transform.position = pastMachine.transform.position;
+        //    Debug.Log("past");
+        //    future = !future;
             
-        }
-        else if (!Future)
-        {
-            fading = true;
-            player.transform.position = futureMachine.transform.position;
-            Debug.Log("future");
-            Future = !Future;
+        //}
+        //else if (!future)
+        //{
+        //    fading = true;
+        //    player.transform.position = futureMachine.transform.position;
+        //    Debug.Log("future");
+        //    future = !future;
             
-        }
+        //}
     }
     IEnumerator fade()
     {
@@ -49,7 +50,7 @@ public class TimeSwitch : MonoBehaviour
         while (fading)
         {
             Color a = oldColor.material.color;
-            a.a -= 1f * Time.deltaTime;
+            a.a -= 2f * Time.deltaTime;
             oldColor.material.color = a;
             yield return new WaitForSeconds(0.005f);
             //Debug.Log(a.a);
