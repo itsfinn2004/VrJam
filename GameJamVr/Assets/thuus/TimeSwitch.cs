@@ -1,51 +1,68 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 
 public class TimeSwitch : MonoBehaviour
 {
     public bool Future;
     public GameObject player;
-    public GameObject past;
-    public GameObject future;
-    [SerializeField]
-    InputActionProperty m_ActivateAction = new InputActionProperty(new InputAction("Activate", type: InputActionType.Button));
-    public InputActionProperty activateAction
+    private Renderer oldColor;
+    public GameObject pastMachine;
+    public GameObject futureMachine;
+    private bool fading = true;
+    
+    
+   
+    private void OnTriggerEnter(Collider other)
     {
-        get => m_ActivateAction;
-        set
-        {
-            ChangeTime();
-        }
-    }
-    public void ChangeTime()
-    {
+        Debug.Log("enter");
+        player = other.gameObject;
+        oldColor = other.gameObject.GetComponent<MeshRenderer>();
+        StartCoroutine(fade());
         print("action");
+    }
+    public void tpp()
+    {
+        Debug.Log("tp");
         if (Future)
         {
-            player.transform.position = future.transform.position;
+
+
+            fading = true;
+            player.transform.position = pastMachine.transform.position;
             Debug.Log("past");
             Future = !Future;
+            
         }
-        else
+        else if (!Future)
         {
-            player.transform .position = past.transform.position;
+            fading = true;
+            player.transform.position = futureMachine.transform.position;
             Debug.Log("future");
             Future = !Future;
+            
         }
-
     }
-    void SetInputActionProperty(ref InputActionProperty property, InputActionProperty value)
+    IEnumerator fade()
     {
-        if (Application.isPlaying)
-            property.DisableDirectAction();
 
-        property = value;
-
-        if (Application.isPlaying && isActiveAndEnabled)
-            property.EnableDirectAction();
+        while (fading)
+        {
+            Color a = oldColor.material.color;
+            a.a -= 1f * Time.deltaTime;
+            oldColor.material.color = a;
+            yield return new WaitForSeconds(0.005f);
+            //Debug.Log(a.a);
+            if (a.a < 0)
+            {
+                fading = false;
+            }
+            
+        }
+        fading = true;
+        Color b = oldColor.material.color;
+        b.a = 1;
+        oldColor.material.color = b;
+        tpp();
     }
 }
