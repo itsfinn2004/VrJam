@@ -8,11 +8,12 @@ TagManager:
   - KeyHole
   - GameMusic
   - outOfBounds
+  - chairmanagement
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - chair
   - Water
   - UI
   - 

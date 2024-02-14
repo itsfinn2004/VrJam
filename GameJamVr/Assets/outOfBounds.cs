@@ -8,10 +8,11 @@ public class outOfBounds : MonoBehaviour
      
     public Vector3 spawn;
     public Quaternion transrotation;
-    
+    Rigidbody rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         spawn = transform.position;
 
         transrotation = transform.rotation;
@@ -20,12 +21,15 @@ public class outOfBounds : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "outOfBounds")
         {
-            gameObject.transform.position = spawn;
-            gameObject.transform.rotation = transrotation;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            this.transform.position = spawn;
+            this.transform.rotation = transrotation;
+            
 
         }
     }
