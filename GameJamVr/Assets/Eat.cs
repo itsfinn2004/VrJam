@@ -11,15 +11,20 @@ public class Eat : MonoBehaviour
     {
         if (other.gameObject.tag == "Eat")
         {
-           
+            if (eat != null)
+            { 
                 eat.Play();
+            }
                 Object.Destroy(other.gameObject);
 
 
         }
         if (other.gameObject.tag == "Objective")
         {
-            eat.Play();
+            if (eat != null)
+            {
+                eat.Play();
+            }
             other.transform.position = new Vector3(100, 20, 100);
         }
     }

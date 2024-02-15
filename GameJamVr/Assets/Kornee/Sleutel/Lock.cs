@@ -47,12 +47,10 @@ public class Lock : MonoBehaviour
                     Instantiate(Spawn, transform.position, Quaternion.identity);
                     Object.Destroy(gameObject);
                     break;
-                case 5:
+                case 2:
                     Instantiate(Spawn, transform.position, Quaternion.identity);
                     Object.Destroy(gameObject);
                     break;
-
-
             }
         }
     }

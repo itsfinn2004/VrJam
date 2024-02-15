@@ -15,12 +15,23 @@ public class TimeSwitch : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
-        tpsSund.Play(0);
-        Debug.Log("enter");
-        player = other.gameObject;
-        oldColor = other.gameObject.GetComponent<MeshRenderer>();
-        StartCoroutine(fade());
-        print("action");
+        if (tpsSund != null)
+        {
+            tpsSund.Play(0);
+        }
+        if(other.gameObject.tag == "Player")
+        {
+            player = other.gameObject;
+            tpp();
+        }
+        else
+        {
+            Debug.Log("enter");
+            player = other.gameObject;
+            oldColor = other.gameObject.GetComponent<MeshRenderer>();
+            StartCoroutine(fade());
+            print("action");
+        }
     }
     public void tpp()
     {
