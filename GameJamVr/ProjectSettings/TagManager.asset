@@ -10,6 +10,8 @@ TagManager:
   - GameMusic
   - outOfBounds
   - chairmanagement
+  - Eat
+  - Objective
   layers:
   - Default
   - TransparentFX
