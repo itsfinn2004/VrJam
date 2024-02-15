@@ -10,6 +10,12 @@ TagManager:
   - GameMusic
   - outOfBounds
   - chairmanagement
+  - Candle_1
+  - Candle_2
+  - Candle_3
+  - Candle_4
+  - Candle_5
+  - PuzzleManager
   layers:
   - Default
   - TransparentFX
