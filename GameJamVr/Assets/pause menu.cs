@@ -19,7 +19,7 @@ public class pausemenu : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(CommonUsages.menuButton, out triggerValue) && triggerValue)
             {
-                Debug.Log("Trigger button is pressed.");
+                Debug.Log("Trigger button is pressed. before being paused");
                 PauseMenu.SetActive(true);
                 paused = true;
 
@@ -28,6 +28,7 @@ public class pausemenu : MonoBehaviour
             else if(device.TryGetFeatureValue(CommonUsages.menuButton, out triggerValue) && triggerValue && paused == true)
             {
                 PauseMenu.SetActive(false);
+                print("button is pressed after being paused");
             }
         }
     }
