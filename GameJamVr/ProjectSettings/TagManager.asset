@@ -16,6 +16,8 @@ TagManager:
   - Candle_4
   - Candle_5
   - PuzzleManager
+  - Eat
+  - Objective
   layers:
   - Default
   - TransparentFX

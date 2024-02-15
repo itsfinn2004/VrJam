@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
+
     
     
     private void Start()
