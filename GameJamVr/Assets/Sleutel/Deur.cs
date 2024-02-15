@@ -10,12 +10,15 @@ public class Deur : MonoBehaviour
     [SerializeField] private GameObject key;
     [SerializeField] private GameObject sleutelGat;
     private bool locked = true;
+    public AudioSource tpsSund;
+
 
     Quaternion beginRotation = new Quaternion(90,90,90,0);
     public string nextScene;
 
     private void OnTriggerEnter(Collider other)
     {
+        tpsSund.Play(0);
         print("Collison");
         if (other.gameObject.tag == "Sleutel")
         {
