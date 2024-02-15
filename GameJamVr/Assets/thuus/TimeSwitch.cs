@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimeSwitch : MonoBehaviour
 {
-    public bool future;
+    //public bool future;
     public GameObject player;
     private Renderer oldColor;
     public GameObject other;
