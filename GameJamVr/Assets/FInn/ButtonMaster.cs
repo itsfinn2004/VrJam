@@ -47,5 +47,10 @@ public class ButtonMaster : MonoBehaviour
         SceneManager.LoadScene(mainMenuScene);
     }
 
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene("TweeKamers");
+    }
+
 
 }

@@ -404,27 +404,6 @@ PrefabInstance:
       addedObject: {fileID: 4013949328217362528}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c24a8942610c6e44ea023d8ffafa2d72, type: 3}
---- !u!114 &750705001264295686 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1872604423794464574, guid: c24a8942610c6e44ea023d8ffafa2d72, type: 3}
-  m_PrefabInstance: {fileID: 1411836658494453816}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &1666928668833739153 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 339396420564961705, guid: c24a8942610c6e44ea023d8ffafa2d72, type: 3}
-  m_PrefabInstance: {fileID: 1411836658494453816}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2390470644959104820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3655640416040449804, guid: c24a8942610c6e44ea023d8ffafa2d72, type: 3}
-  m_PrefabInstance: {fileID: 1411836658494453816}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2811115606905132213 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3788881016459668621, guid: c24a8942610c6e44ea023d8ffafa2d72, type: 3}
@@ -441,15 +420,15 @@ PrefabInstance:
     - target: {fileID: 690721086408541360, guid: 78a69e619841bda46822ccc88e93d106, type: 3}
       propertyPath: volumeSlider
       value: 
-      objectReference: {fileID: 750705001264295686}
+      objectReference: {fileID: 0}
     - target: {fileID: 1541614638542230359, guid: 78a69e619841bda46822ccc88e93d106, type: 3}
       propertyPath: audio
       value: 
-      objectReference: {fileID: 1666928668833739153}
+      objectReference: {fileID: 0}
     - target: {fileID: 1541614638542230359, guid: 78a69e619841bda46822ccc88e93d106, type: 3}
       propertyPath: PauseMenu
       value: 
-      objectReference: {fileID: 2390470644959104820}
+      objectReference: {fileID: 0}
     - target: {fileID: 2208954767029127873, guid: 78a69e619841bda46822ccc88e93d106, type: 3}
       propertyPath: m_RootOrder
       value: -1
