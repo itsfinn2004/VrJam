@@ -8,7 +8,8 @@ public class outOfBounds : MonoBehaviour
      
     public Vector3 spawn;
     public Quaternion transrotation;
-    Rigidbody rb;
+    public Rigidbody rb;
+    public bool isPlayer;
 
     private void Awake()
     {
@@ -25,12 +26,23 @@ public class outOfBounds : MonoBehaviour
     {
         if(other.tag == "outOfBounds")
         {
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            this.transform.position = spawn;
-            this.transform.rotation = transrotation;
-            
+            if(!isPlayer)
+            {
+                Debug.Log("test if not player");
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                this.transform.position = spawn;
+                this.transform.rotation = transrotation;
+            }
+            else
+            {
+                Debug.Log("test if wel player");
+                this.transform.position = spawn;
+                this.transform.rotation = transrotation;
+            }
+
 
         }
     }
 }
+    
