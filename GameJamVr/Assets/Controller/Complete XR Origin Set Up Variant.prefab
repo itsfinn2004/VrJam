@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eat: {fileID: 0}
+  eatParticle: {fileID: 0}
 --- !u!82 &7415681580206386011
 AudioSource:
   m_ObjectHideFlags: 0
