@@ -3408,6 +3408,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 1
+  mc: {fileID: 0}
 --- !u!65 &413677956976740704
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2600,6 +2600,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!4 &562862458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2760749186874183965, guid: feeca7d4f3bd92c458b486895f9f9bd2, type: 3}
@@ -3319,6 +3320,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &638939314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,6 +3990,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &707247375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4404,6 +4407,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &761852620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5169,6 +5173,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &867243017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6284,6 +6289,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &988123611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6738,6 +6744,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &999677749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7213,6 +7220,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1063160221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7642,6 +7650,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1085533246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9463,6 +9472,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1432777929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9978,6 +9988,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1546529860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11202,6 +11213,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1793281028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11922,6 +11934,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1833709489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12832,6 +12845,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!114 &1916530855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13594,7 +13608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1238210668453153348, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1238210668453153348, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13614,7 +13628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347084582332968049, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1347084582332968049, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13662,7 +13676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824543413136140233, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2824543413136140233, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13738,7 +13752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4273692979179774244, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4273692979179774244, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13838,7 +13852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052091921536754273, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6052091921536754273, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13866,7 +13880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415006079629237084, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6415006079629237084, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13954,7 +13968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169153277846503929, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9169153277846503929, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14010,6 +14024,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 0
+  mc: {fileID: 0}
 --- !u!1 &2001953420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2776788782739068290, guid: fd48747e9ff38354a8278152f90561a5, type: 3}
@@ -14031,6 +14046,7 @@ MonoBehaviour:
   transrotation: {x: 0, y: 0, z: 0, w: 0}
   rb: {fileID: 0}
   isPlayer: 1
+  mc: {fileID: 0}
 --- !u!1001 &2010366590
 PrefabInstance:
   m_ObjectHideFlags: 0

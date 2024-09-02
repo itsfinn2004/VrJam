@@ -34,26 +34,8 @@ public class TimeSwitch : MonoBehaviour
         }
     }
     public void tpp()
-    {
-        //Debug.Log("tp");
-        //if (future)
-        //{
-        
+    { 
         player.transform.position = other.transform.position;
-        //    fading = true;
-        //    player.transform.position = pastMachine.transform.position;
-        //    Debug.Log("past");
-        //    future = !future;
-            
-        //}
-        //else if (!future)
-        //{
-        //    fading = true;
-        //    player.transform.position = futureMachine.transform.position;
-        //    Debug.Log("future");
-        //    future = !future;
-            
-        //}
     }
     IEnumerator fade()
     {

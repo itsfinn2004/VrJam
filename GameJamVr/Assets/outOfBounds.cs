@@ -10,20 +10,23 @@ public class outOfBounds : MonoBehaviour
     public Quaternion transrotation;
     public Rigidbody rb;
     public bool isPlayer;
+    public MeshCollider mc;
 
     private void Awake()
     {
+        mc.GetComponent<MeshCollider>();
         rb = GetComponent<Rigidbody>();
         spawn = transform.position;
 
         transrotation = transform.rotation;
-
-
-
+        mc.enabled = false;
+        
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if(other.tag == "outOfBounds")
         {
             if(!isPlayer)
